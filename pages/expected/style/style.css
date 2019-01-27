@@ -1,0 +1,156 @@
+@charset "UTF-8";
+@import url('<link href="https://fonts.googleapis.com/css?family=Roboto" rel="stylesheet">');
+body {
+  margin: 0;
+  padding: 0;
+  background: #F9FAFA;
+  font-family: 'Roboto', sans-serif;
+  color: #657180;
+  font-size: 14px; }
+  body a:link, body a:visited {
+    text-decoration: none;
+    color: #657180; }
+
+h1, h2 {
+  font-weight: 500;
+  color: #464c5b;
+  line-height: 1.5;
+  font-size: 18px;
+  margin: 0; }
+
+hr {
+  margin-top: 20px;
+  margin-bottom: 20px;
+  border: 0;
+  border-top: 1px solid #eee; }
+
+li {
+  list-style: none; }
+
+.workspace {
+  max-width: 1300px;
+  margin: 0 auto; }
+  .workspace header .sidebar {
+    width: 23%;
+    background: #fff;
+    padding: 0 8px;
+    display: flex;
+    flex-wrap: nowrap;
+    flex-direction: row;
+    align-items: center; }
+    .workspace header .sidebar img {
+      height: 35px; }
+    .workspace header .sidebar .lang {
+      height: 30px;
+      min-width: 66px;
+      margin: 0;
+      display: inline-block;
+      border-radius: 4px;
+      margin-left: auto;
+      background: #f9fafc; }
+      .workspace header .sidebar .lang li {
+        font-size: 13px;
+        text-transform: uppercase;
+        color: #657180; }
+  .workspace header .content {
+    height: 70px;
+    padding: 0 20px;
+    display: flex;
+    flex-wrap: nowrap;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+    width: 77%; }
+    .workspace header .content .content-header .btn-group {
+      padding: 6px 15px;
+      border-radius: 4px;
+      background-color: #fff;
+      border: 1px solid #d7dde4;
+      border-left: none; }
+    .workspace header .content .content-header .current-btn {
+      padding: 6px 15px;
+      border-radius: 4px;
+      box-shadow: inset 0 3px 5px rgba(0, 0, 0, 0.125);
+      background-color: rgba(0, 0, 0, 0.05);
+      border: 1px solid transparent;
+      border-top-right-radius: 0;
+      border-bottom-right-radius: 0; }
+    .workspace header .content .drop-dwn {
+      display: flex;
+      align-items: center;
+      justify-content: flex-end;
+      padding: 10px;
+      height: 100%;
+      color: #6a727c; }
+      .workspace header .content .drop-dwn .avatar {
+        padding-right: 10px; }
+        .workspace header .content .drop-dwn .avatar img {
+          width: 50px;
+          height: 50px;
+          margin: 0; }
+      .workspace header .content .drop-dwn .username {
+        display: flex;
+        flex-direction: column;
+        margin: 5px; }
+      .workspace header .content .drop-dwn .indicator:after {
+        content: "тЦ╝"; }
+  .workspace .main {
+    display: flex;
+    flex-direction: row; }
+    .workspace .main .sidebar {
+      width: 23%;
+      background-color: #fff;
+      padding: 0 0 0 15px;
+      transition: .2s; }
+      .workspace .main .sidebar .toolbar .profile {
+        display: flex; }
+        .workspace .main .sidebar .toolbar .profile .image {
+          width: 50px;
+          height: 60px;
+          display: flex;
+          align-items: center; }
+          .workspace .main .sidebar .toolbar .profile .image img {
+            width: 30px; }
+      .workspace .main .sidebar .toolbar .title {
+        display: flex;
+        flex-direction: column;
+        justify-content: center; }
+        .workspace .main .sidebar .toolbar .title div {
+          font-weight: 500;
+          font-size: 16px;
+          margin-bottom: 5px; }
+        .workspace .main .sidebar .toolbar .title span {
+          color: #c3cbd6;
+          font-size: 12px; }
+      .workspace .main .sidebar .all-rights img {
+        height: 65px;
+        width: 140px; }
+      .workspace .main .sidebar .all-rights p {
+        font-size: 12px;
+        color: #aab7c3; }
+      .workspace .main .sidebar .all-rights .apps {
+        margin-right: 15px;
+        margin-top: 15px;
+        margin-bottom: 120px; }
+        .workspace .main .sidebar .all-rights .apps .install {
+          background-color: #f9fafc;
+          padding: 5px 4px;
+          border-radius: 25px;
+          display: inline-block;
+          width: 100%;
+          margin-bottom: 15px;
+          padding-bottom: 6px;
+          color: #39f;
+          font-size: 14px; }
+          .workspace .main .sidebar .all-rights .apps .install img {
+            width: 30px;
+            padding: 0 7px;
+            height: 18px; }
+          .workspace .main .sidebar .all-rights .apps .install span {
+            border-left: 1px solid rgba(0, 0, 0, 0.05);
+            padding: 0 10px; }
+    .workspace .main .content {
+      padding: 0 20px 20px;
+      width: 77%; }
+
+/*# sourceMappingURL=style.css.map */
