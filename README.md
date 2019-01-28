@@ -1,1 +1,1 @@
-# banderolka
+# banderol
