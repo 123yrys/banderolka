@@ -1,0 +1,15 @@
+<!DOCTYPE html>
+<html>
+  {% include "head.html" %}
+  <body>
+    <div class="workspace">
+      {% include "header.html" %}
+      <section>
+        <div class="main">
+          {% include "sidebar.html" %}
+          <div class="content">{% block content %} {% endblock %}</div>
+        </div>
+      </section>
+    </div>
+  </body>
+</html>
