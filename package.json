@@ -1,0 +1,18 @@
+{
+  "name": "it-academy",
+  "version": "1.0.0",
+  "main": "index.js",
+  "repository": "https://github.com/123yrys/banderolka.git",
+  "author": "123yrys <yryska59@gmail.com>",
+  "license": "MIT",
+  "dependencies": {
+    "bootstrap": "4.0.0-alpha.6",
+    "browser-sync": "^2.26.3",
+    "gulp": "^4.0.0",
+    "gulp-sass": "^4.0.2",
+    "nunjucks": "^3.1.7"
+  },
+  "devDependencies": {
+    "@fortawesome/fontawesome-free": "^5.7.0"
+  }
+}
