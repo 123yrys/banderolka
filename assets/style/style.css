@@ -42,7 +42,7 @@ li {
   flex-direction: row;
   align-items: center;
   justify-content: space-between;
-  background-color: #fff;
+  background: #142440;
   width: 77%; }
   .workspace header .content .content-header .btn-group {
     padding: 6px 15px;
@@ -65,7 +65,8 @@ li {
     justify-content: flex-end;
     height: 100%;
     color: #6a727c;
-    padding: 0px 10px 0px 10px; }
+    padding: 0px 10px 0px 10px;
+    background: #fff; }
     .workspace header .content .drop-dwn .avatar {
       padding-right: 10px; }
       .workspace header .content .drop-dwn .avatar img {
@@ -76,15 +77,20 @@ li {
       display: flex;
       flex-direction: column;
       margin: 5px;
-      color: #464c5b; }
+      color: #34ccff; }
       .workspace header .content .drop-dwn .username span:last-child {
         color: #6A727C; }
     .workspace header .content .drop-dwn .indicator {
       font-size: 20px; }
-  .workspace header .content .drop-dwn-open {
-    background: #f9fafc;
-    border: 1px solid #d7dde4;
-    border-radius: 2px; }
+  .workspace header .content .drop-content {
+    border: 1px solid red;
+    border-top: 1px solid #eee;
+    background: #000;
+    position: absolute;
+    padding: 0px 0px 0px 12px; }
+    .workspace header .content .drop-content .navigations {
+      display: flex;
+      flex-direction: column; }
 .workspace .main {
   display: flex;
   flex-direction: row; }
