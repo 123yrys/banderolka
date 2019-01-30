@@ -1,43 +1,45 @@
 const gulp = require('gulp');
-const sass = require ('gulp-sass');
+const sass = require('gulp-sass');
 const nunjucks = require("gulp-nunjucks-html");
 const browserSync = require("browser-sync").create();
+var gulpCopy = require('gulp-copy');
 
 const SCSS_FOLDER = "./assets/style/**/*.scss";
 const TEMPALTES_FOLDER = "./templates/**/*.html";
 
-gulp.task("sass", function(cb) {
+gulp.task("sass", function (cb) {
   return gulp
     .src("./scss/style.scss")
     .pipe(sass())
-    .pipe(gulp.dest("./assets/style/"))
+    .pipe(gulp.dest("./build/css"))
     .pipe(browserSync.stream());
 });
 
-gulp.task("nunjucks", function(cb) {
+gulp.task("nunjucks", function (cb) {
   gulp
-    .src("./templates/*.html")
-    .pipe(
-      nunjucks({
-        searchPaths: ["./templates/chunks", "./templates"]
-      })
-    )
-    .pipe(gulp.dest("./build/"));
+    .src("./templates/*.nj")
+    .pipe(nunjucks({
+      searchPaths: ['./templates/chunks', './templates/layout'],
+      ext: '.html'
+    }))
+    .pipe(gulp.dest("./build"))
   browserSync.reload();
-  cb();
+  cb()
 });
 
-gulp.task("browser-sync", function() {
+gulp.task('browser-sync', function () {
   browserSync.init({
     server: {
       baseDir: "./build"
     }
   });
-
-  gulp.watch(SCSS_FOLDER, gulp.series("sass"));
-  gulp.watch(TEMPALTES_FOLDER, gulp.series("nunjucks"));
+  gulp.watch('./scss/**/*.scss', gulp.parallel('sass'))
+  gulp.watch('./templates/**/*.nj', gulp.parallel('nunjucks'))
 });
 
-gulp.task("sass:watch", function() {
-  return gulp.watch(SCSS_FOLDER, gulp.series("sass"));
-});
+gulp.task('gulp-copy', function () {
+  return gulp
+    .src(['./assets/images/*', './assets/fonts/*'])
+    .pipe(gulpCopy('./build', {}))
+    .pipe(gulp.dest('./build'));
+})

@@ -1,0 +1,58 @@
+<div id="myModal" class="modal">
+            <!-- Modal content -->
+            <div class="modal-content">
+                <span class="close">&times;</span>
+                <h1>Как указать адрес для доставки</h1>
+                <hr>
+                <div class="filling-adress">
+                    <ul>
+                        <li>
+                            <div class="adress-line">
+                                <div class="example-one">Первая строка</div>
+                                <div class="example">Ваши имя и фамилия (латиницей)</div>
+                            </div>
+                        </li>
+                        <li>
+                            <div class="adress-line">
+                                <div class="example-one">Адрес (первая строка)</div>
+                                <div class="example">
+                                    LOAD GmbH W1449590 (вместо 1449590 — уникальный номер, 
+                                    который вы видите в своем аккаунте. По нему мы узнаем, что это ваша посылка). 
+                                    В некоторых европейских магазинах эта строка называется Company name.
+                                </div>
+                            </div>
+                        </li>
+                        <li>
+                            <div class="adress-line">
+                                <div class="example-one">Address (second line)</div>
+                                <div class="example">Gartenfelder Str. 28 Load</div>
+                            </div>
+                        </li>
+                        <li>
+                            <div class="adress-line">
+                                <div class="example-one">Город</div>
+                                <div class="example">Berlin</div>
+                            </div>
+                        </li>
+                        <li>
+                            <div class="adress-line">
+                                <div class="example-one">Область (State)</div>
+                                <div class="example">Это поле заполнять не нужно</div>
+                            </div>
+                        </li>
+                        <li>
+                            <div class="adress-line">
+                                <div class="example-one">Индекс (Zip code)</div>
+                                <div class="example">13599</div>
+                            </div>
+                        </li>
+                        <li>
+                            <div class="adress-line">
+                                <div class="example-one">Телефон</div>
+                                <div class="example">03069202222</div>
+                            </div>
+                        </li>     
+                    </ul>
+                </div>
+            </div>
+         </div> 
