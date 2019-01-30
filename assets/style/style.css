@@ -1,8 +1,4 @@
 @import url('<link href="https://fonts.googleapis.com/css?family=Roboto" rel="stylesheet">');
-@font-face {
-  font-family: 'Glyphicons Halflings';
-  src: url("//cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/3.3.7/fonts/glyphicons-halflings-regular.eot");
-  src: url("//cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/3.3.7/fonts/glyphicons-halflings-regular.eot?#iefix") format("embedded-opentype"), url("//cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/3.3.7/fonts/glyphicons-halflings-regular.woff2") format("woff2"), url("//cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/3.3.7/fonts/glyphicons-halflings-regular.woff") format("woff"), url("//cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/3.3.7/fonts/glyphicons-halflings-regular.ttf") format("truetype"), url("//cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/3.3.7/fonts/glyphicons-halflings-regular.svg#glyphicons_halflingsregular") format("svg"); }
 body {
   margin: 0;
   padding: 0;
@@ -32,7 +28,7 @@ li {
 
 .workspace header .sidebar {
   width: 23%;
-  background: #142440; }
+  background: #57468A; }
   .workspace header .sidebar img {
     height: 100px; }
 .workspace header .content {
@@ -42,7 +38,7 @@ li {
   flex-direction: row;
   align-items: center;
   justify-content: space-between;
-  background-color: #fff;
+  background: #57468A;
   width: 77%; }
   .workspace header .content .content-header .btn-group {
     padding: 6px 15px;
@@ -65,7 +61,8 @@ li {
     justify-content: flex-end;
     height: 100%;
     color: #6a727c;
-    padding: 0px 10px 0px 10px; }
+    padding: 0px 10px 0px 10px;
+    background: #fff; }
     .workspace header .content .drop-dwn .avatar {
       padding-right: 10px; }
       .workspace header .content .drop-dwn .avatar img {
@@ -76,24 +73,31 @@ li {
       display: flex;
       flex-direction: column;
       margin: 5px;
-      color: #464c5b; }
+      color: #34ccff; }
       .workspace header .content .drop-dwn .username span:last-child {
         color: #6A727C; }
     .workspace header .content .drop-dwn .indicator {
       font-size: 20px; }
-  .workspace header .content .drop-dwn-open {
-    background: #f9fafc;
-    border: 1px solid #d7dde4;
-    border-radius: 2px; }
+  .workspace header .content .drop-content {
+    border-top: 1px solid #eee;
+    background: #fff;
+    position: absolute;
+    padding: 0px 0px 15px 12px; }
+    .workspace header .content .drop-content .navigations {
+      display: flex;
+      flex-direction: column;
+      line-height: 20px; }
+      .workspace header .content .drop-content .navigations a:hover {
+        color: #39f; }
 .workspace .main {
   display: flex;
   flex-direction: row; }
   .workspace .main .sidebar {
     width: 23%;
-    background: #25384f;
+    background: #62538E;
     transition: .2s; }
     .workspace .main .sidebar .toolbar a:hover {
-      background: #142440; }
+      background: #57468A; }
     .workspace .main .sidebar .toolbar .profile {
       display: flex; }
       .workspace .main .sidebar .toolbar .profile .image {
