@@ -7,6 +7,14 @@
         <link rel="stylesheet" href="bootstrap-4.2.1-dist/css/bootstrap-grid.css">
         <link rel="stylesheet" href="bootstrap-4.2.1-dist/js">
         <link rel="stylesheet" href="assets/fontawesome-free-5.6.3-web/css/all.css">
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+        <script>
+            $(document).ready(function(){
+            $(".drop-dwn").click(function(){
+                $(".drop-content").toggle();
+            });
+            });
+        </script>
     </head>
     <body>
         <div class="workspace">
@@ -19,22 +27,37 @@
                     </div>
                     <div class="content">
                         <div class="content-header">
-                            <a href="#" class="current-btn">
+                            <a href="#" class="btn-group active-btn">
                                 <span>New York</span>
                             </a>
                             <a href="#" class="btn-group">
                                 <span>Delaware</span>
                             </a>
                         </div>
-                        <div class="drop-dwn">
-                            <div class="avatar">
-                                <img src="assets/images/user.svg">
+                        <div>
+                            <div class="drop-dwn">
+                                <div class="avatar">
+                                    <img src="assets/images/user.svg">
+                                </div>
+                                <div class="username">
+                                    <span>Yrys</span>
+                                    <span>100$</span>
+                                </div>
+                                <div class="indicator">
+                                    <i class="fas fa-angle-down"></i>
+                                </div>
                             </div>
-                            <div class="username">
-                                <span>Yrys</span>
-                                <span>100$</span>
-                            </div>
-                            <div class="indicator">
+                            <div class="drop-content">
+                                <p>ID : <span>#516556</span></p>
+                                <hr>
+                                <div class="navigations">
+                                    <a href="#">Профиль</a>
+                                    <a href="#">Пополнить баланс</a>
+                                    <a href="#">Мои адреса</a>
+                                    <a href="#">Настройки</a>
+                                    <a href="#">Статистика</a>
+                                    <a href="#">Выход</a>
+                                </div>
                             </div>
                         </div>
                     </div>
