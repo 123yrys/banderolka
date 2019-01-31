@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html>
+    {% include "head.nj" %}
+<body>
+    <div class="workspace">
+     {% include "header.nj" %}
+     <section>
+        <div class="main">
+            {% include "sidebar.nj" %}
+            <div class="content">
+                <h1>Поддержка</h1>
+                    <br>
+                    <br>
+                <button>Новое обращение</button>
+                    <br>
+                    <br> 
+                Фильтр: &nbsp;
+                <a href="#" >Все</a> &nbsp;
+                <a href="#" >Открытые</a> &nbsp;
+                <a href="#" >Закрыто</a> &nbsp;
+
+                <br>
+                <br>
+                <input type="text" placeholder="  Найти"><button>Найти</button>
+            </div>
+        </div>
+        </section
+    </div>
+</body>
+
+</html>

@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html>
+    {% include "head.nj" %}
+<body>
+    <div class="workspace">
+     {% include "header.nj" %}
+     <section>
+        <div class="main">
+            {% include "sidebar.nj" %}
+            <div class="content">
+                <div class="wrapper">
+                    <div class="in-process">
+                        <h1>Пакующиеся посылки</h1>
+                        <input type="text" placeholder="id, трекинг, заголовок, адрес">
+                    </div>
+                </div>
+            </div>
+        </div>
+        </section
+    </div>
+</body>
+
+</html>
