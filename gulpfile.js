@@ -39,7 +39,7 @@ gulp.task('browser-sync', function () {
 
 gulp.task('gulp-copy', function () {
   return gulp
-    .src(['./assets/images/*', './assets/fonts/*'])
-    .pipe(gulpCopy('./build', {}))
+    .src(['./assets/images/*', './assets/fonts/**/*.{ttf,woff,woff2,eot,eof,svg,css,js,yml,json}'])
     .pipe(gulp.dest('./build'));
 })
+
