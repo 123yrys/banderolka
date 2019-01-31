@@ -7,7 +7,7 @@
         </div>
         <div class="content">
             <div class="content-header">
-                <a href="#" class="btn-group active-btn">
+                <a href="index.html" class="btn-group active-btn">
                     <span>New York</span>
                 </a>
                 <a href="delaware.html" class="btn-group">
