@@ -2,20 +2,32 @@
   "name": "it-academy",
   "version": "1.0.0",
   "main": "index.js",
-  "repository": "https://github.com/123yrys/banderolka.git",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/123yrys/banderolka.git"
+  },
   "author": "123yrys <yryska59@gmail.com>",
   "license": "MIT",
   "dependencies": {
     "bootstrap": "4.0.0-alpha.6",
     "browser-sync": "^2.26.3",
-    "gulp": "^4.0.0",
     "gulp-copy": "^4.0.1",
     "gulp-nunjucks-html": "^2.0.0",
     "gulp-sass": "^4.0.2",
     "gulp-sourcemaps": "^2.6.4",
-    "nunjucks": "^3.1.7"
+    "nunjucks": "^3.1.7",
+    "nunjucks-loader": "^3.0.0"
   },
   "devDependencies": {
-    "@fortawesome/fontawesome-free": "^5.7.0"
+    "@fortawesome/fontawesome-free": "^5.7.0",
+    "gulp": "^4.0.0"
+  },
+  "description": "",
+  "bugs": {
+    "url": "https://github.com/123yrys/banderolka/issues"
+  },
+  "homepage": "https://github.com/123yrys/banderolka#readme",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
   }
 }
