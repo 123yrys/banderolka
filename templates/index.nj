@@ -19,7 +19,7 @@
         </div>
         <hr>
         <div class="list">
-            <a href="#">
+            <a href="my-profile.html">
                 <img src="assets/images/man-user.svg" alt="">
                 Мой публичный профиль
             </a>

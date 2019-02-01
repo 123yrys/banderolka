@@ -537,6 +537,7 @@ ul{
             }
             .setting-title{
                 display: flex;
+                padding-left: 10px;
                 flex-direction: row;
                 .active-setting{
                     border-bottom: 2px solid $hover;
@@ -553,9 +554,6 @@ ul{
                 border-radius: 4px;
                 padding: 10px 0px 25px 20px;
                 margin-top: 10px;
-                h2{
-                    margin:20px 0 20px 0;
-                }
                 .setting-input{
                     display: flex;
                     flex-direction: column;
@@ -563,12 +561,36 @@ ul{
                         width:50%;
                         border:none;
                         border-radius: 4px;
-                        height: 30px;
+                        height: 25px;
                         border:1px solid $text-color;
                         margin-top: 10px;
+                        padding: 10px;
+                        font-size: 15px;
                     }
                     label{
                         margin: 10px 0 10px 0;
+                    }
+                }
+                .settings-web{
+                    display: flex;
+                    padding: 10px 0 0 10px;
+                    .settings-language{
+                        width: 40%;
+                        p{
+                            color: #aab7c3;
+                        }
+                    }
+                    .settings-input{
+                        width: 60%;
+                        input{
+                            height: 25px;
+                            width: 70%;
+                            border-radius: 4px;
+                            border:none;
+                            border: 1px solid #657180;
+                            padding: 10px;
+                            font-size: 15px;
+                        }
                     }
                 }
             }

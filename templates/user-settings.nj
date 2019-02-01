@@ -14,7 +14,7 @@
                         <a href="#" class="setting-personal  active-setting">
                             <span>Личные данные</span>
                         </a>
-                        <a href="#" class="setting-page">
+                        <a href="web-settings.html" class="setting-page">
                             <span>Настройки сайта</span>
                         </a>
                     </div>
