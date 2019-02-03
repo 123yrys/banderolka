@@ -8,60 +8,70 @@
         <div class="main">
             {% include "sidebar.nj" %}
             <div class="content">
-              <h1>Калькулятор</h1>
-                        <br>
-                        <br>
-                       <h>Вес</h> &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
-                       &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
-                       &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
-                       &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; &nbsp;&nbsp;&nbsp;
-                       <h>Страна</h>
-                       <br>
-                       <br>
-                       <input type="text"size="10"> 
-                       <select>
+                     <div class="calc">
+                      <h1>Калькулятор</h1>
+                       
+                         <div class="c-info">
+                             <div> <h>Вес</h> </div> 
+                             <div> <h>Страна</h> </div>
+                         </div>
+                       
+                       <div class="c-info2">
+                           <div> <input type="text"size="10"> </div>
+                           <div>
+                          <select>
                             <option>кг</option>
                             <option>фунд</option>
-                        </select>
-                       &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
-                       &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; &nbsp;&nbsp;&nbsp; 
-                       
+                          </select>
+                          </div>
+                         
+               
+                       <div>
                        <select>
                             <option>Кыргызстан</option>
                             <option>США</option>
                             <option>Россия</option>
                             <option>Казахстан</option>
                         </select>
-                            &nbsp;&nbsp;
+                        </div>
+                           <div>
                        <button>Посчитать</button>
+                            </div>
+                            </div>
 
+                     <div class="c-info3">
+                       <div><h>Размеры</h> </div>
+                       <div><h>Стоимость ($)</h> </div> 
+                      
+                       <div><h>Страховка</h> </div>
+                       <div> <h> Подробнее </h> </div>
+                     </div>
+                      
+                     <div class="c-info4">
+                       <div><input type="text"size="5"> </div>
+                       <div><input type="text"size="5"> </div>
+                       <div><input type="text"size="5"> </div>
 
-                       <br>
-                        <br>
-                       <h>Размеры</h> &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
-                       &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
-                       &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
-                       &nbsp;&nbsp;&nbsp; &nbsp;&nbsp;&nbsp;
-                       <h>Стоимость ($)</h> 
-                       &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
-                       &nbsp;&nbsp;&nbsp; &nbsp;&nbsp;&nbsp;
-                       <h>Страховка</h>
-                       <br>
-                       <br>
-                       <input type="text"size="5"> <input type="text"size="5"> <input type="text"size="5"> 
+                       
+                       <div>
                        <select>
                             <option>см</option>
                             <option>дюймы</option>
                         </select>
-                       &nbsp;&nbsp;&nbsp; &nbsp;&nbsp;&nbsp;
+                        </div>
                        
-                       <input type="text"size="5">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
-                       &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
-                       &nbsp;&nbsp;&nbsp;&nbsp; 
-                       <label><input type="checkbox"/>нет</label> &nbsp;&nbsp;&nbsp;
-                       <label><input type="checkbox"/>Global Green</label>&nbsp;&nbsp;&nbsp;
-                       <label><input type="checkbox"/>IT Academy</label>
+                       
+                       <div><input type="text"size="5"> </div>
+                       <div><label><input type="checkbox"/>нет</label></div>
+                       <div><label><input type="checkbox"/>Global Green</label></div>
+                       <div><label><input type="checkbox"/>IT Academy</label></div>
+
+                       </div>
+
+                    </div>
+                    </div>
             </div>
+
         </div>
         </section
     </div>

@@ -407,10 +407,91 @@ ul{
                     font-weight: 500;
                 }
                 .helptext{
-                    border: 1px solid #34ccff;
-                    background: #B5EDFF
+                    background: #B5EDFF;
+                    margin-top: 20px;
+                    padding: 15px;
+                    border-radius: 10px;
+                }
+            .helptext2{
+                    margin-left: 300px;
                 }
             }
+            .requests{
+                margin-top: 20px;
+                .thema{
+       
+                }
+                .r-menu{
+                    margin-top: 10px;
+                    color: #9ea7b4;
+                }
+                a{
+                    color: #9ea7b4;
+                }
+                input{
+                    margin-top: 20px;
+                    width: 100%;
+                    height: 35px;
+                    border-radius: 5px;
+                    border: 0.5px solid black;
+                }
+            }
+            .supp{
+               .s-thema{
+                margin-top: 20px;
+                width: 150px;
+                text-align: center;
+                 }
+                .s-btn{
+                margin-top: 10px;
+               width: 150px;
+               height: 40px;
+               background-color: #B5EDFF;
+               border-radius: 10px;
+               font-size: 15px;
+                 }
+                .s-menu{
+                margin-top: 20px;
+                 }
+                 input{
+                     margin-top: 20px;
+                    width: 85%;
+                    height: 35px;
+                    border-radius: 5px;
+                    border: 0.5px solid black;
+                 }
+                 button{
+                     height: 40px;
+                     width: 10%;
+                     background-color: #B5EDFF;
+                     border-radius: 10px;
+                 }
+               }
+               .calc{
+                   margin-top: 20px;
+                   margin-left: 20px;
+                   .c-info{
+                       display: grid;
+                       grid-template-columns: 260px 150px;
+                       margin-top: 20px;
+                       
+                   }
+                   .c-info2{
+                       display: grid;
+                       grid-template-columns: 105px 150px 105px 150px; 
+                       margin-top: 10px;
+                   }
+                   .c-info3{
+                       display: grid;
+                       grid-template-columns: 300px 150px 150px 150px;
+                       margin-top: 20px;
+                   }
+                   .c-info4{
+                       display: grid;
+                       grid-template-columns: 70px 70px 70px 100px 150px 70px 70px 100px;
+                       margin-top: 10px;
+                   }
+               }
             .goods-storage{
                 .message-info{
                     margin-top: 15px;

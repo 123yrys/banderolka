@@ -15,7 +15,10 @@
                             <p>Правила оформления заказа</p>
                         </div>
                         <button>Добавить новый заказ</button>
-                        <img src="assets/images/help.png" width="20px height="20px>    <a href="#"> Kак это работает</a>
+                        &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+                        &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+                        <img src="assets/images/help.png" width="20px height="20px> 
+                        <a href="help-text.html"> Kак это работает</a>
                         <div class="helptext">
                             <p>
                                 Мы запустили акцию "Месяц красоты". С 14 февраля по 10 февраля 2019 года мы бесплатно

@@ -8,15 +8,20 @@
         <div class="main">
             {% include "sidebar.nj" %}
             <div class="content">
-                 <h1>Спецзапросы</h1> 
-                        Фильтр: &nbsp
-                    <a href="#"> Все</a> &nbsp
-                    <a href="#"> Активен</a> &nbsp
-                    <a href="#"> Выполняется</a> &nbsp
-                    <a href="#"> Выполнен</a> &nbsp
-                    <a href="#"> Отменен</a> &nbsp
-                    <a href="#"> Приостановлен</a>
-                    <br>
+              <div class="requests">
+              <div class="thema">
+               <h1>Спецзапросы</h1> 
+              </div>
+               <div class="r-menu">
+                        Фильтр: &nbsp;
+                    <a href="#"> Все</a> &nbsp;
+                    <a href="#"> Активен</a> &nbsp;
+                    <a href="#"> Выполняется</a> &nbsp;
+                    <a href="#"> Выполнен</a> &nbsp;
+                    <a href="#"> Отменен</a> &nbsp; 
+                    <a href="#"> Приостановлен</a> &nbsp;
+                </div>
+                
                     
                     <input type="text" placeholder="  Поиск: трекинг, заголовок, id">
 
@@ -31,6 +36,7 @@
                     <p>
                         Спецзапрос можно создать с вашей страницы входящих посылок, нажав на ссылку "Создать спецзапрос".
                     </p>
+              </div>
             </div>
         </div>
         </section
