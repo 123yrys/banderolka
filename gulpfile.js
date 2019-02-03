@@ -4,6 +4,7 @@ const nunjucks = require("gulp-nunjucks-html");
 const browserSync = require("browser-sync").create();
 var gulpCopy = require('gulp-copy');
 
+
 const SCSS_FOLDER = "./assets/style/**/*.scss";
 const TEMPALTES_FOLDER = "./templates/**/*.html";
 
@@ -42,4 +43,6 @@ gulp.task('gulp-copy', function () {
     .src(['./assets/images/*', './assets/fonts/**/*.{ttf,woff,woff2,eot,eof,svg,css,js,yml,json}'])
     .pipe(gulp.dest('./build'));
 })
+
+
 
