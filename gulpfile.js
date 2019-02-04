@@ -10,6 +10,7 @@ const TEMPALTES_FOLDER = "./templates/**/*.html";
 
 gulp.task("sass", function (cb) {
   return gulp
+
     .src("./scss/style.scss")
     .pipe(sass())
     .pipe(gulp.dest("./build/css"))
@@ -38,11 +39,22 @@ gulp.task('browser-sync', function () {
   gulp.watch('./templates/**/*.nj', gulp.parallel('nunjucks'))
 });
 
-gulp.task('gulp-copy', function () {
+gulp.task('gulp-copy-img', function () {
   return gulp
-    .src(['./assets/images/*', './assets/fonts/**/*.{ttf,woff,woff2,eot,eof,svg,css,js,yml,json}'])
-    .pipe(gulp.dest('./build'));
+    .src(['./assets/images/**'])
+    .pipe(gulp.dest('./build/assets/images'));
+})
+gulp.task('gulp-copy-fonts', function () {
+  return gulp
+    .src(['./assets/fonts/**'])
+    .pipe(gulp.dest('./build/assets/fonts'));
 })
 
-
+// gulp.task(
+//   "build",
+//   gulp.series(
+//     "clean",
+//     gulp.parallel("gulp-copy", "sass", "nunjucks", "browser-sync")
+//   )
+// );
 
