@@ -470,6 +470,22 @@ ul{
                .calc{
                    margin-top: 20px;
                    margin-left: 20px;
+                   font-size: 15px;
+                   input{
+                       border-radius: 5px;
+                       border: 0.5px solid black;
+                       height: 30px;
+                   }
+                   select{
+                       height: 30px;
+                       border-radius: 5px;
+                       background: #B5EDFF;
+                   }
+                   button{
+                       height: 30px;
+                       border-radius: 5px;
+                       background: #B5EDFF;
+                   }
                    .c-info{
                        display: grid;
                        grid-template-columns: 260px 150px;
@@ -478,17 +494,17 @@ ul{
                    }
                    .c-info2{
                        display: grid;
-                       grid-template-columns: 105px 150px 105px 150px; 
+                       grid-template-columns: 105px 150px 105px 180px; 
                        margin-top: 10px;
                    }
                    .c-info3{
                        display: grid;
-                       grid-template-columns: 300px 150px 150px 150px;
+                       grid-template-columns: 350px 150px 150px 150px;
                        margin-top: 20px;
                    }
                    .c-info4{
                        display: grid;
-                       grid-template-columns: 70px 70px 70px 100px 150px 70px 70px 100px;
+                       grid-template-columns: 80px 80px 80px 100px 150px 100px 100px 100px;
                        margin-top: 10px;
                    }
                }

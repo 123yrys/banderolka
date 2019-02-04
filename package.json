@@ -9,7 +9,7 @@
   "author": "123yrys <yryska59@gmail.com>",
   "license": "MIT",
   "dependencies": {
-    "bootstrap": "4.0.0-alpha.6",
+    "bootstrap": "^4.0.0-alpha.6",
     "gulp-copy": "^4.0.1",
     "gulp-nunjucks-html": "^2.0.0",
     "gulp-sass": "^4.0.2",
