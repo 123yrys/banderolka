@@ -13,7 +13,11 @@
             </div>
         </div>
         </section>
+        
     </div>
+    <div class="footer">
+        {% include "footer.nj" %}
+        </div>
     <div id="myModal" class="modal">
         {% block modal %}
         {% endblock %}

@@ -13,7 +13,7 @@
                 <h1>Поддержка</h1>
             </div>
                   <div>
-                <button class="s-btn">Новое обращение</button>
+                <button onclick="window.location='new-sup.html'" class="s-btn">Новое обращение</button>
                    </div>
                 <div class="s-menu">
                 Фильтр: &nbsp;

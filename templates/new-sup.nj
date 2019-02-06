@@ -8,14 +8,14 @@
         <div class="main">
             {% include "sidebar.nj" %}
             <div class="content">
-                 <div class="wrapper">
-                   <h1>Добро пожаловать в ленту отзывов T-EXP!</h1> 
-                </div>
+            <div class="sup2">
+            <h1>Новое обращение</h1>
+            </div>
+           
             </div>
         </div>
         </section
     </div>
-    {% include "footer.nj" %}
 </body>
 
 </html>

@@ -3,49 +3,63 @@ $header-color: #57468A;
 $side-color:#62538E;
 $text-color:#657180;
 $h1-color:#464c5b;
-$hover : #39f;
-
-body{
+$hover: #39f;
+body {
     margin: 0;
     padding: 0;
     background: #F9FAFA;
     font-family: 'Roboto', sans-serif;
     color: $text-color;
     font-size: 14px;
-    a:link, a:visited{
+    a:link,
+    a:visited {
         text-decoration: none;
         color: $text-color;
     }
 }
-h1, h2{
+
+h1,
+h2 {
     font-weight: 500;
     color: $h1-color;
     line-height: 1.5;
     font-size: 18px;
     margin: 0;
 }
-hr{
+
+hr {
     margin-top: 20px;
     margin-bottom: 20px;
     border: 0;
     border-top: 1px solid #eee;
 }
-ul{
+
+ul {
     list-style: none;
 }
-.modal{
+
+.modal {
     display: none;
-    position: fixed; /* Stay in place */
-    z-index: 1; /* Sit on top */
-    padding-top: 100px; /* Location of the box */
+    position: fixed;
+    /* Stay in place */
+    z-index: 1;
+    /* Sit on top */
+    padding-top: 100px;
+    /* Location of the box */
     left: 0;
     top: 0;
-    width: 100%; /* Full width */
-    height: 100%; /* Full height */
-    overflow: auto; /* Enable scroll if needed */
-    background-color: rgb(0,0,0); /* Fallback color */
-    background-color: rgba(0,0,0,0.4); /* Black w/ opacity */ 
+    width: 100%;
+    /* Full width */
+    height: 100%;
+    /* Full height */
+    overflow: auto;
+    /* Enable scroll if needed */
+    background-color: rgb(0, 0, 0);
+    /* Fallback color */
+    background-color: rgba(0, 0, 0, 0.4);
+    /* Black w/ opacity */
 }
+
 .modal-content {
     background-color: #fefefe;
     margin: auto;
@@ -53,45 +67,48 @@ ul{
     border: 1px solid #888;
     width: 50%;
     border-radius: 4px;
-    .adress-line{
+    .adress-line {
         display: flex;
         // justify-content: space-between;
     }
-    .example{
-        color:$header-color;
+    .example {
+        color: $header-color;
         width: 75%;
         padding: 10px 0px 0px 10px;
     }
-    .example-one{
+    .example-one {
         width: 25%;
         padding: 10px 0px 0px 8px;
     }
-  }
-  
-  /* The Close Button */
-  .close {
+}
+
+
+/* The Close Button */
+
+.close {
     color: #aaaaaa;
     float: right;
     font-size: 28px;
     font-weight: bold;
-  }
-  
-  .close:hover,
-  .close:focus {
+}
+
+.close:hover,
+.close:focus {
     color: #000;
     text-decoration: none;
     cursor: pointer;
-  }
-.workspace{
-    header{
-        .sidebar{
-            width:23%;
+}
+
+.workspace {
+    header {
+        .sidebar {
+            width: 23%;
             background: $header-color;
-            img{
+            img {
                 height: 100px;
             }
         }
-        .content{
+        .content {
             padding: 0 20px;
             display: flex;
             flex-wrap: nowrap;
@@ -100,21 +117,21 @@ ul{
             justify-content: space-between;
             background: $header-color;
             width: 77%;
-            .content-header{
-                .active-btn{
-                    background-color:#B5EDFF !important;
+            .content-header {
+                .active-btn {
+                    background-color: #B5EDFF !important;
                     border: 1px solid transparent;
                 }
-                .btn-group{
+                .btn-group {
                     padding: 6px 15px;
                     border-radius: 4px;
                     background-color: #fff;
                     border: 1px solid #d7dde4;
                     border-left: none;
-                    box-shadow: inset 0 3px 5px rgba(0,0,0,.125);
+                    box-shadow: inset 0 3px 5px rgba(0, 0, 0, .125);
                 }
             }
-            .drop-dwn{
+            .drop-dwn {
                 display: flex;
                 align-items: center;
                 justify-content: flex-end;
@@ -123,105 +140,105 @@ ul{
                 padding: 10px;
                 background: #fff;
                 border-radius: 4px;
-                .avatar{
+                .avatar {
                     padding-right: 10px;
-                    img{
+                    img {
                         width: 50px;
                         height: 50px;
                         margin: 0;
                     }
                 }
-                .username{
+                .username {
                     display: flex;
                     flex-direction: column;
-                    margin: 5px; 
+                    margin: 5px;
                     color: #34ccff;
-                    span:last-child{
-                        color:#6A727C;
+                    span:last-child {
+                        color: #6A727C;
                     }
                 }
-                .indicator{
-                   font-size: 20px;
+                .indicator {
+                    font-size: 20px;
                 }
             }
-            .drop-content{
+            .drop-content {
                 border-top: 1px solid #eee;
                 background: #fff;
                 position: absolute;
                 padding: 0px 0px 15px 12px;
                 display: none;
-                .navigations{
+                .navigations {
                     display: flex;
                     flex-direction: column;
                     line-height: 20px;
-                    a:hover{
+                    a:hover {
                         color: $hover;
                     }
                 }
             }
         }
     }
-    .main{
+    .main {
         display: flex;
         flex-direction: row;
-        .sidebar{
+        .sidebar {
             width: 23%;
             background: $side-color;
             transition: .2s;
-            .toolbar{
-                a:hover{
+            .toolbar {
+                a:hover {
                     background: $header-color;
                 }
-                .profile{
+                .profile {
                     display: flex;
-                    .image{
+                    .image {
                         width: 15%;
                         height: 60px;
                         display: flex;
                         padding: 0px 0px 0px 15px;
-                        img{
+                        img {
                             width: 30px;
                         }
                     }
-                    .title{
+                    .title {
                         display: flex;
                         flex-direction: column;
                         justify-content: center;
                         color: #34ccff;
                         width: 50%;
-                        div{
+                        div {
                             font-weight: 500;
                             font-size: 16px;
                             margin-bottom: 5px;
                         }
-                        span{
+                        span {
                             color: #c3cbd6;
                             font-size: 12px;
                         }
                     }
-                    .arrow-icon{
+                    .arrow-icon {
                         padding: 18px 0px 0px 40px;
                         font-size: 20px;
                     }
                 }
-                .active-profile{
+                .active-profile {
                     border-right: 3px solid #34ccff;
                 }
             }
-            .all-rights{
-                img{
+            .all-rights {
+                img {
                     height: 65px;
                     width: 140px;
                 }
-                p{
+                p {
                     font-size: 12px;
                     color: #aab7c3;
                 }
-                .apps{
+                .apps {
                     margin-right: 15px;
                     margin-top: 15px;
                     margin-bottom: 120px;
-                    .install{
+                    .install {
                         background-color: #f9fafc;
                         padding: 5px 4px;
                         border-radius: 25px;
@@ -231,57 +248,56 @@ ul{
                         padding-bottom: 6px;
                         color: $hover;
                         font-size: 14px;
-                        img{
+                        img {
                             width: 30px;
                             padding: 0 7px;
                             height: 18px;
                         }
-                        span{
-                            border-left: 1px solid rgba(0,0,0,.05);
+                        span {
+                            border-left: 1px solid rgba(0, 0, 0, .05);
                             padding: 0 10px;
-                      
-                         }  
-                     }
+                        }
+                    }
                 }
             }
         }
-        .content{
+        .content {
             padding: 0 20px 20px;
             width: 77%;
-            .box{
+            .box {
                 padding: 15px;
                 margin: 20px 0;
                 background: #fff;
-                box-shadow: 0 1px 1px 0 rgba(0,0,0,.1);
+                box-shadow: 0 1px 1px 0 rgba(0, 0, 0, .1);
                 border-radius: 4px;
                 display: flex;
                 flex-direction: row;
-                .case{
+                .case {
                     background: #f9fafc;
                     border-radius: 4px;
                     padding: 20px;
                     width: 40%;
-                    .row{
+                    .row {
                         display: flex;
                         flex-direction: row;
-                        .avatar{
-                            img{
+                        .avatar {
+                            img {
                                 width: 50px;
                                 height: 50px;
                             }
                         }
-                        h1{
+                        h1 {
                             padding-left: 15px;
                         }
-                        p{
+                        p {
                             margin: 0 0 10px;
                             font-size: 14px;
                             padding-left: 15px;
                         }
                     }
-                    .edit-profile{
+                    .edit-profile {
                         margin-top: 10px;
-                        .edit-btn{
+                        .edit-btn {
                             color: #657180;
                             background-color: #fff;
                             padding: 6px 15px;
@@ -290,63 +306,63 @@ ul{
                             border: 1px solid #d7dde4;
                         }
                     }
-                    .list{
-                        a{
+                    .list {
+                        a {
                             padding: 0;
                             color: #39f;
-                            img{
+                            img {
                                 height: 15px;
                                 margin-right: 5px;
                             }
                         }
-                        a:hover{
+                        a:hover {
                             color: #9ea7b4;
                         }
                     }
-                    .list-menu{
-                        ul{
+                    .list-menu {
+                        ul {
                             padding: 0;
-                            li{
+                            li {
                                 padding-bottom: 5px;
                                 padding-top: 5px;
                             }
-                            a{
-                                color:#39f;
-                                img{
+                            a {
+                                color: #39f;
+                                img {
                                     height: 15px;
                                     margin-right: 5px;
                                 }
                             }
-                            a:hover{
+                            a:hover {
                                 color: #9ea7b4
                             }
                         }
                     }
                 }
-                .adress-box{
+                .adress-box {
                     width: 55%;
                     margin-left: 25px;
-                    .bg-info{
+                    .bg-info {
                         background-image: url(../assets/images/blue-stripped-pattern.jpg);
                         background-size: cover;
                         background-repeat: no-repeat;
                         padding: 10px;
                         border-radius: 4px;
-                        .adress-line{
+                        .adress-line {
                             background: #fff;
                             padding: 15px;
                             border-radius: 4px;
-                            .adress-tab{
+                            .adress-tab {
                                 display: flex;
                                 flex-direction: row;
-                                .adr-title{
+                                .adr-title {
                                     padding: 7px;
                                 }
-                                .active-adress{
+                                .active-adress {
                                     border-bottom: 2px solid $hover;
                                 }
                             }
-                            .adr-body{
+                            .adr-body {
                                 display: flex;
                                 flex-direction: column;
                                 color: #464c5b;
@@ -355,19 +371,19 @@ ul{
                                 padding: 20px;
                                 line-height: 18px;
                             }
-                            .question{
+                            .question {
                                 margin-top: 10px;
-                                a{
-                                   color:#39f;
+                                a {
+                                    color: #39f;
                                 }
                             }
                         }
                     }
                 }
             }
-            .wrapper{
+            .wrapper {
                 padding-top: 30px;
-                button{
+                button {
                     background-color: #34ccff;
                     border-color: #39f;
                     color: #fff;
@@ -377,7 +393,7 @@ ul{
                     border: none;
                     margin-top: 15px;
                 }
-                input{
+                input {
                     margin-top: 25px;
                     width: 100%;
                     height: 25px;
@@ -385,50 +401,48 @@ ul{
                     border: 1px solid #657180;
                     padding: 5px 0px 5px 10px;
                 }
-                ::-webkit-input-placeholder{
+                 ::-webkit-input-placeholder {
                     font-style: italic;
                     font-size: 14px;
                 }
             }
-            .help-line{
-                p{
+            .help-line {
+                p {
                     margin: 0;
                     padding: 0;
                 }
-                .regulations{
+                .regulations {
                     margin-top: 25px;
                     width: 100%;
                     height: 25px;
                     border-radius: 4px;
                     padding: 13px 0px 6px 10px;
-                    background:#fff;
-                    box-shadow: 0 1px 1px 0 rgba(0,0,0,.1);
+                    background: #fff;
+                    box-shadow: 0 1px 1px 0 rgba(0, 0, 0, .1);
                     color: #34ccff;
                     font-weight: 500;
                 }
-                .helptext{
+                .helptext {
                     background: #B5EDFF;
                     margin-top: 20px;
                     padding: 15px;
                     border-radius: 10px;
                 }
-            .helptext2{
+                .helptext2 {
                     margin-left: 300px;
                 }
             }
-            .requests{
+            .requests {
                 margin-top: 20px;
-                .thema{
-       
-                }
-                .r-menu{
+                .thema {}
+                .r-menu {
                     margin-top: 10px;
                     color: #9ea7b4;
                 }
-                a{
+                a {
                     color: #9ea7b4;
                 }
-                input{
+                input {
                     margin-top: 20px;
                     width: 100%;
                     height: 35px;
@@ -436,172 +450,176 @@ ul{
                     border: 0.5px solid black;
                 }
             }
-            .supp{
-               .s-thema{
-                margin-top: 20px;
-                width: 150px;
-                text-align: center;
-                 }
-                .s-btn{
-                margin-top: 10px;
-               width: 150px;
-               height: 40px;
-               background-color: #B5EDFF;
-               border-radius: 10px;
-               font-size: 15px;
-                 }
-                .s-menu{
-                margin-top: 20px;
-                 }
-                 input{
-                     margin-top: 20px;
+            .supp {
+                .s-thema {
+                    margin-top: 20px;
+                    width: 150px;
+                    text-align: center;
+                }
+                .s-btn {
+                    margin-top: 10px;
+                    width: 150px;
+                    height: 40px;
+                    background-color: #B5EDFF;
+                    border-radius: 10px;
+                    font-size: 15px;
+                }
+                .s-menu {
+                    margin-top: 20px;
+                }
+                input {
+                    margin-top: 20px;
                     width: 85%;
                     height: 35px;
                     border-radius: 5px;
                     border: 0.5px solid black;
-                 }
-                 button{
-                     height: 40px;
-                     width: 10%;
-                     background-color: #B5EDFF;
-                     border-radius: 10px;
-                 }
-               }
-               .calc{
-                   margin-top: 20px;
-                   margin-left: 20px;
-                   font-size: 15px;
-                   input{
-                       border-radius: 5px;
-                       border: 0.5px solid black;
-                       height: 30px;
-                   }
-                   select{
-                       height: 30px;
-                       border-radius: 5px;
-                       background: #B5EDFF;
-                   }
-                   button{
-                       height: 30px;
-                       border-radius: 5px;
-                       background: #B5EDFF;
-                   }
-                   .c-info{
-                       display: grid;
-                       grid-template-columns: 260px 150px;
-                       margin-top: 20px;
-                       
-                   }
-                   .c-info2{
-                       display: grid;
-                       grid-template-columns: 105px 150px 105px 180px; 
-                       margin-top: 10px;
-                   }
-                   .c-info3{
-                       display: grid;
-                       grid-template-columns: 350px 150px 150px 150px;
-                       margin-top: 20px;
-                   }
-                   .c-info4{
-                       display: grid;
-                       grid-template-columns: 80px 80px 80px 100px 150px 100px 100px 100px;
-                       margin-top: 10px;
-                   }
-               }
-            .goods-storage{
-                .message-info{
+                }
+                button {
+                    height: 40px;
+                    width: 10%;
+                    background-color: #B5EDFF;
+                    border-radius: 10px;
+                }
+            }
+            .calc {
+                margin-top: 20px;
+                margin-left: 20px;
+                font-size: 15px;
+                input {
+                    border-radius: 5px;
+                    border: 0.5px solid black;
+                    height: 30px;
+                }
+                select {
+                    height: 30px;
+                    border-radius: 5px;
+                    background: #B5EDFF;
+                }
+                button {
+                    height: 30px;
+                    border-radius: 5px;
+                    background: #B5EDFF;
+                }
+                .c-info {
+                    display: grid;
+                    grid-template-columns: 260px 150px;
+                    margin-top: 20px;
+                }
+                .c-info2 {
+                    display: grid;
+                    grid-template-columns: 105px 150px 105px 180px;
+                    margin-top: 10px;
+                }
+                .c-info3 {
+                    display: grid;
+                    grid-template-columns: 350px 150px 150px 150px;
+                    margin-top: 20px;
+                }
+                .c-info4 {
+                    display: grid;
+                    grid-template-columns: 80px 80px 80px 100px 150px 100px 100px 100px;
+                    margin-top: 10px;
+                }
+            }
+            .sup2 {
+                margin-top: 20px;
+                margin-left: 20px;
+            }
+            .goods-storage {
+                .message-info {
                     margin-top: 15px;
                     background: #B5EDFF;
                     padding: 10px;
                     border-radius: 10px;
-                    img{
+                    img {
                         height: 12px;
                         margin-right: 5px;
                     }
-                    a:hover{
+                    a:hover {
                         color: $hover;
                     }
                 }
             }
-            .sending{
-                .filter{
+            .sending {
+                .filter {
                     margin: 10px 0;
-                    span{
+                    span {
                         display: inline-block;
                         margin-right: 12px;
                     }
-                    a{
+                    a {
                         margin-right: 12px;
-                        color:#39f;
+                        color: #39f;
                     }
-                    a:hover{
-                        color:#657180;
+                    a:hover {
+                        color: #657180;
                     }
                 }
             }
-            .box{
+            .box {
                 display: flex;
             }
-            .popular-shops{
+            .popular-shops {
                 background: #fff;
                 border-radius: 4px;
                 padding-bottom: 30px;
                 padding-top: 30px;
                 margin-top: 20px;
-                h2, h4{
+                h2,
+                h4 {
                     text-align: center;
                 }
-                .shop-logo{
+                .shop-logo {
                     width: 200px;
                     display: flex;
                     flex-direction: column;
                     align-items: center;
                     padding: 15px;
-                    img{
-                        width:100%;
+                    img {
+                        width: 100%;
                     }
                 }
-                .shop-description{
+                .shop-description {
                     width: calc(100% - 200px);
                 }
-                ol{
+                ol {
                     line-height: 25px;
                 }
             }
-            .feedback{
+            .feedback {
                 padding-left: 20px;
-                .user-box{
+                .user-box {
                     display: flex;
-                    img{
+                    img {
                         height: 50px;
                     }
-                    .user-name{
+                    .user-name {
                         padding: 10px;
                         display: flex;
                         flex-direction: column;
-                        .time{
+                        .time {
                             color: #aab7c3
                         }
                     }
                 }
-                .user-comments{
-                    p{
+                .user-comments {
+                    p {
                         line-height: 20px;
                     }
                 }
             }
-            .rating{
+            .rating {
                 padding: 15px;
-                i{
+                i {
                     color: goldenrod;
                     font-size: 16px;
                 }
             }
-            .shop-list{
+            .shop-list {
                 display: flex;
                 flex-wrap: wrap;
                 justify-content: space-between;
-                .shop-box{
+                .shop-box {
                     background: #fff;
                     display: flex;
                     flex-direction: column;
@@ -609,85 +627,135 @@ ul{
                     border-radius: 4px;
                     margin-top: 20px;
                     padding-bottom: 20px;
-                    img{
+                    img {
                         height: 80px;
                         align-self: center;
                         max-width: 80%;
                         margin-bottom: 10px;
                         margin-top: 20px;
                     }
-                    .shop-info{
+                    .shop-info {
                         text-align: right;
                         padding-right: 15px;
-                        :hover{
+                         :hover {
                             background: $header-color;
-                            color:#fff;
+                            color: #fff;
                         }
-                        a{
+                        a {
                             padding: 6px 15px;
-                            border:1px solid $side-color;
+                            border: 1px solid $side-color;
                             border-radius: 4px;
-                            
                         }
                     }
                 }
             }
-            .setting-title{
+            .setting-title {
                 display: flex;
                 padding-left: 10px;
                 flex-direction: row;
-                .active-setting{
+                .active-setting {
                     border-bottom: 2px solid $hover;
                 }
-                .setting-personal{
+                .setting-personal {
                     padding: 20px;
                 }
-                .setting-page{
+                .setting-page {
                     padding: 20px;
                 }
             }
-            .setting-change{
+            .setting-change {
                 background: #fff;
                 border-radius: 4px;
                 padding: 10px 0px 25px 20px;
                 margin-top: 10px;
-                .setting-input{
+                .setting-input {
                     display: flex;
                     flex-direction: column;
-                    input{
-                        width:50%;
-                        border:none;
+                    input {
+                        width: 50%;
+                        border: none;
                         border-radius: 4px;
                         height: 25px;
-                        border:1px solid $text-color;
+                        border: 1px solid $text-color;
                         margin-top: 10px;
                         padding: 10px;
                         font-size: 15px;
                     }
-                    label{
+                    label {
                         margin: 10px 0 10px 0;
                     }
                 }
-                .settings-web{
+                .settings-web {
                     display: flex;
                     padding: 10px 0 0 10px;
-                    .settings-language{
+                    .settings-language {
                         width: 40%;
-                        p{
+                        p {
                             color: #aab7c3;
                         }
                     }
-                    .settings-input{
+                    .settings-input {
                         width: 60%;
-                        input{
+                        input {
                             height: 25px;
                             width: 70%;
                             border-radius: 4px;
-                            border:none;
+                            border: none;
                             border: 1px solid #657180;
                             padding: 10px;
                             font-size: 15px;
                         }
+                    }
+                }
+            }
+        }
+    }
+}
+
+.footer {
+    .foo {
+        background-color: $side-color;
+        display: grid;
+        grid-template-columns: 300px 200px 200px 200px 200px;
+        grid-column-gap: 20px;
+        padding: 20px;
+        h1 {
+            color: #34ccff;
+        }
+        a {
+            color: #9ea7b4;
+        }
+        .all-rights {
+            img {
+                height: 65px;
+                width: 140px;
+            }
+            p {
+                font-size: 12px;
+                color: #aab7c3;
+            }
+            .apps {
+                margin-right: 15px;
+                margin-top: 15px;
+                margin-bottom: 120px;
+                .install {
+                    background-color: #f9fafc;
+                    padding: 5px 4px;
+                    border-radius: 25px;
+                    display: inline-block;
+                    width: 100%;
+                    margin-bottom: 15px;
+                    padding-bottom: 6px;
+                    color: $hover;
+                    font-size: 14px;
+                    img {
+                        width: 30px;
+                        padding: 0 7px;
+                        height: 18px;
+                    }
+                    span {
+                        border-left: 1px solid rgba(0, 0, 0, .05);
+                        padding: 0 10px;
                     }
                 }
             }

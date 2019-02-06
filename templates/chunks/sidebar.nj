@@ -123,23 +123,8 @@
             </a>
         </div>
         <div>
-            <hr>
+            
         </div>
-        <div class="all-rights">
-            <p>
-                Copyright 2010 - 2018 Qwintry.<br>
-                All Rights Reserved
-            </p>
-            <div class="apps">
-                <a href="#" class="install">
-                    <img src="assets/images/apple.svg" alt="">
-                    <span>Скачать в App Store</span>
-                </a>
-                <a href="#" class="install">
-                    <img src="assets/images/google-play.svg" alt="">
-                    <span>Скачать в Google Play</span>
-                </a>
-            </div>
-        </div>
+        
     </div>
    

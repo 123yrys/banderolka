@@ -1,3 +1,5 @@
+{% extends "base.nj" %}
+{% block content %}
 <!DOCTYPE html>
 <html>
     {% include "head.nj" %}
@@ -21,6 +23,8 @@
         </div>
         </section
     </div>
+    {% extends "base.nj" %}
+{% block content %}
 </body>
 
 </html>

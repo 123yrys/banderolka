@@ -23,7 +23,9 @@
   "devDependencies": {
     "@fortawesome/fontawesome-free": "^5.7.0",
     "browser-sync": "^2.26.3",
-    "gulp": "^4.0.0"
+    "eslint": "^5.13.0",
+    "gulp": "^4.0.0",
+    "gulp-image": "^4.4.1"
   },
   "description": "",
   "bugs": {
