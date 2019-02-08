@@ -713,12 +713,14 @@ ul {
 }
 
 .footer {
+    background-color: $side-color;
     .foo {
-        background-color: $side-color;
         display: grid;
         grid-template-columns: 300px 200px 200px 200px 200px;
         grid-column-gap: 20px;
         padding: 20px;
+        grid-column-gap: 5px;
+        margin-left: 20px;
         h1 {
             color: #34ccff;
         }

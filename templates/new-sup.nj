@@ -1,12 +1,14 @@
+{% extends "base.nj" %}
+{% block content %}
 <!DOCTYPE html>
 <html>
-    {% include "head.nj" %}
+  
 <body>
     <div class="workspace">
-     {% include "header.nj" %}
+   
      <section>
         <div class="main">
-            {% include "sidebar.nj" %}
+            
             <div class="content">
             <div class="sup2">
             <h1>Новое обращение</h1>
@@ -19,3 +21,4 @@
 </body>
 
 </html>
+{% endblock %}
