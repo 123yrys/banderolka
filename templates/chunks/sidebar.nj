@@ -1,7 +1,8 @@
- 
-    <div class="sidebar">
+<link rel="import" href="script.js"> 
+ <div class="sidebar">
         <div class="toolbar" id="myToolbar">
-            <a href="index.html" class="profile">
+
+             <a href="index.html" class="profile">
                 <div class="image">
                     <img src="assets/images/user.svg" alt="">
                 </div>
@@ -13,6 +14,7 @@
                     <i class="fas fa-angle-right"></i>
                 </div>
             </a>
+
             <a href="expected.html" class="profile active-profile">
                 <div class="image">
                     <img src="assets/images/clock.svg" alt="">
@@ -25,6 +27,7 @@
                     <i class="fas fa-angle-right"></i>
                 </div>
             </a>
+
             <a href="trades-storage.html" class="profile">
                 <div class="image">
                     <img src="assets/images/planning.svg" alt="">
@@ -37,6 +40,7 @@
                     <i class="fas fa-angle-right"></i>
                 </div>
             </a>
+
             <a href="in-process.html" class="profile">
                 <div class="image">
                     <img src="assets/images/folder.svg" alt="">
@@ -49,6 +53,7 @@
                     <i class="fas fa-angle-right"></i>
                 </div>
             </a>
+
             <a href="send-goods.html" class="profile">
                 <div class="image">
                     <img src="assets/images/send.svg" alt="">
@@ -61,6 +66,7 @@
                     <i class="fas fa-angle-right"></i>
                 </div>
             </a>
+
             <a href="help.html" class="profile">
                 <div class="image">
                     <img src="assets/images/social-care.svg" alt="">
@@ -73,6 +79,7 @@
                     <i class="fas fa-angle-right"></i>
                 </div>
             </a>
+
             <a href="requests.html" class="profile">
                 <div class="image">
                     <img src="assets/images/video-conference.svg" alt="">
@@ -85,6 +92,7 @@
                     <i class="fas fa-angle-right"></i>
                 </div>
             </a>
+
             <a href="view-page.html" class="profile">
                     <div class="image">
                         <img src="assets/images/rating.svg" alt="">
@@ -97,6 +105,7 @@
                         <i class="fas fa-angle-right"></i>
                     </div>
                 </a>
+
             <a href="support.html" class="profile">
                 <div class="image">
                     <img src="assets/images/technical-support.svg" alt="">
@@ -109,6 +118,7 @@
                     <i class="fas fa-angle-right"></i>
                 </div>
             </a>
+
             <a href="calculator.html" class="profile">
                 <div class="image">
                     <img src="assets/images/abacus.svg" alt="">
@@ -121,22 +131,19 @@
                     <i class="fas fa-angle-right"></i>
                 </div>
             </a>
-            <a id="menu" href="#" class="icon">&#9776;</a>
+           <a id="menu" href="#" class="icon">&#9776;</a> 
         </div>
-        <div>
-            
-        </div>
-        
     </div>
-    <script>
-    menu.onclick = function myFunction() {
- var x = document.getElementById("myToolbar");
- 
- if(x.className === "toolbar"){
-     x.className += "responsive";
- } else {
-     x.className = "toolbar";
- }
+    
+<script>
+menu.onclick = function myFunction(){
+    var x = document.getElementById("myToolbar");
+
+    if(x.className === "toolbar"){
+        x.className += " responsive";
+    } else{
+        x.className = "toolbar";
+    }
 }
-    </script>
+</script>
    

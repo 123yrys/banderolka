@@ -6,77 +6,95 @@
 <body>
     <div class="workspace">
 
-     <section>
-        <div class="main">
-           
-            <div class="content">
-                     <div class="calc">
-                      <h1>Калькулятор</h1>
-                       
-                         <div class="c-info">
-                             <div> <h>Вес</h> </div> 
-                             <div> <h>Страна</h> </div>
-                         </div>
-                       
-                       <div class="c-info2">
-                           <div> <input type="text"size="10"> </div>
-                           <div>
-                          <select>
-                            <option>кг</option>
-                            <option>фунд</option>
-                          </select>
-                          </div>
-                         
-               
-                       <div>
-                       <select>
-                            <option>Кыргызстан</option>
-                            <option>США</option>
-                            <option>Россия</option>
-                            <option>Казахстан</option>
-                        </select>
-                        </div>
-                           <div>
-                       <button>Посчитать</button>
-                            </div>
-                            </div>
+    <div class="content">
 
-                     <div class="c-info3">
-                       <div><h>Размеры</h> </div>
-                       <div><h>Стоимость ($)</h> </div> 
-                      
-                       <div><h>Страховка</h> </div>
-                       <div> <h> Подробнее </h> </div>
-                     </div>
-                      
-                     <div class="c-info4">
-                       <div><input type="text"size="7"> </div>
-                       <div><input type="text"size="7"> </div>
-                       <div><input type="text"size="7"> </div>
+      <div class="calc">
+            <span>Калькулятор</span>
+      
+                  <div class="calc1">
+                    <span class="text-left">Страна</span>
+                    <select class="country" name="country" id="country">
+                      <option id="7">Америка</option>
+                    </select>
+                  </div>
+                
+                <div class="calc-box">
+                <div class="calc2">
+                    <span>Мера длины</span>
+                    <select name="length_unit" id="length_unit" class="calculate">
+                      <option value="cm">CM</option>
+                      <option value="in">IN</option>
+                    </select>
+                  </div>
 
-                       
-                       <div>
-                       <select>
-                            <option>см</option>
-                            <option>дюймы</option>
-                        </select>
-                        </div>
-                       
-                       
-                       <div><input type="text"size="5"> </div>
-                       <div><label><input type="checkbox"/>нет</label></div>
-                       <div><label><input type="checkbox"/>Global Green</label></div>
-                       <div><label><input type="checkbox"/>IT Academy</label></div>
+                  <div class="calc3">
+                    <span>Мера веса</span>
+                    <select name="weight_unit" id="weight_unit" class="calculate">
+                      <option value="kg">KG</option>
+                      <option value="lb">LB</option>
+                    </select>
+                  </div>
+                </div>
 
-                       </div>
+                <div class="calc-box2">
 
-                    </div>
-                    </div>
+                <div class="calc4">
+                    <span>Вес</span>
+                    <form class="" action="" method="">
+                      <input type="number" name="weight" id="weight" value="0" step="0.1">
+                    </form>
+                  </div>
+
+                  <div class="item">
+                    <span>Длина</span>
+                    <form class="" action="" method="">
+                      <input type="number" name="l" id="l" value="0">
+                    </form>
+                  </div>
+
+                  <div class="item">
+                    <span>Ширина</span>
+                    <form class="" action="" method="">
+                      <input type="number" name="w" id="w" value="0">
+                    </form>
+                  </div>
+
+                  <div class="item">
+                    <span>Высота</span>
+                    <form class="" action="" method="">
+                      <input type="number" name="h" id="h" value="0">
+                    </form>
+                  </div>
+                </div>
+                
+
+            
+
+            <div class="btn">
+              <!-- <div class="text">
+                Magnet connects and integrates
+                Shopping-'s fans for the same goal.
+              </div> -->
+              <form class="" action="" method="">
+                <input type="button" class="calculate" id="calculate" name="calculate" value="Вычислить стоимость транспортировки">
+              </form>
             </div>
 
-        </div>
-        </section
+            <div class="clear"></div>
+
+        
+        
+      </div>
+  
+
+
+
     </div>
+
+   
+
+        
+    </div> 
 </body>
 
 </html>

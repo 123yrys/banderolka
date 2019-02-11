@@ -137,6 +137,7 @@ ul {
                 height: 100px;
             }
         }
+        
         .content {
             padding: 0 20px;
             display: flex;
@@ -466,6 +467,52 @@ ul {
                     font-size: 14px;
                 }
             }
+            .newor{
+                input{
+                    border: 1px solid black;
+                    border-radius: 5px;
+                    height: 25px;
+                }
+                h1{
+                    margin-top: 20px;
+                    font-size: 20px;
+                }
+                .new-t{
+                    p{
+                        margin-left: 7px;
+                    }
+                    h{
+                        font-size: 15px;
+                    }
+                    margin-top: 5px;
+                    border: 0px solid;
+                    background: #B5EDFF;
+                    padding: 5px;
+                    border-radius: 7px;
+                }
+                .new-order{
+                    margin-top: 30px;
+                    display: grid;
+                    grid-template-columns: 300px 255px 200px 200px ;
+                    grid-gap: 10px;
+                }
+                .new-order2{
+                    margin-top: 20px;
+                    display: grid;
+                    grid-template-columns: 200px 200px 200px 200px;
+                }
+                .btnn{
+                    display: grid;
+                    grid-template-columns: 200px 200px;
+                    margin-top: 10px;
+                    height: 20px;
+                    float: right;
+                    color: white;
+                    background: #B5EDFF;
+                    border: none;
+                    
+                }
+            }
             .help-line {
                 p {
                     margin: 0;
@@ -510,7 +557,9 @@ ul {
                     border: 0.5px solid black;
                 }
             }
+
             .supp {
+                
                 .s-thema {
                     margin-top: 20px;
                     width: 150px;
@@ -541,10 +590,24 @@ ul {
                     border-radius: 10px;
                 }
             }
+            
             .calc {
                 margin-top: 20px;
-                margin-left: 20px;
+                margin-left: 50px;
                 font-size: 15px;
+                display: grid;
+                grid-gap: 20px;
+                .btn{
+                    
+                }
+                .calc-box{
+                    display: grid;
+                    grid-template-columns: 200px 200px;
+                }
+                .calc-box2{
+                    display: grid;
+                    grid-template-columns: 200px 200px 200px 200px;
+                }
                 input {
                     border-radius: 5px;
                     border: 0.5px solid black;
@@ -560,30 +623,73 @@ ul {
                     border-radius: 5px;
                     background: #B5EDFF;
                 }
-                .c-info {
-                    display: grid;
-                    grid-template-columns: 260px 150px;
-                    margin-top: 20px;
-                }
-                .c-info2 {
-                    display: grid;
-                    grid-template-columns: 105px 150px 105px 180px;
-                    margin-top: 10px;
-                }
-                .c-info3 {
-                    display: grid;
-                    grid-template-columns: 350px 150px 150px 150px;
-                    margin-top: 20px;
-                }
-                .c-info4 {
-                    display: grid;
-                    grid-template-columns: 80px 80px 80px 100px 150px 100px 100px 100px;
-                    margin-top: 10px;
-                }
+               
             }
             .sup2 {
+                p{
+                    margin-top: 20px;
+                }
+                button{
+                    border: none;
+                    border-radius: 5px;
+                    width: 100px;
+                    height: 30px;
+                }
+                .butt{
+                    margin-top: 20px;
+                }
                 margin-top: 20px;
                 margin-left: 20px;
+                .file_upload{
+                    margin-top: 20px;
+                    display: block;
+                    position: relative;
+                    overflow: hidden;
+                    font-size: 1em;              /* example */
+                    height: 2em;                 /* example */
+                    line-height: 2em             /* the same as height */
+                }
+                .file_upload .button, .file_upload > mark{
+                    display: block;
+                    cursor: pointer              /* example */
+                }
+                .file_upload .button{
+                    float: right;
+                    box-sizing: border-box;
+                    -moz-box-sizing: border-box;
+                    width: 8em;                  /* example */
+                    height: 100%;
+                    text-align: center           /* example */
+                }
+                .file_upload > mark{
+                    background: transparent;     /* example */
+                    padding-left: 1em            /* example */
+                }
+                .file_upload input[type=file]{
+                    position: absolute;
+                    top: 0;
+                    opacity: 0
+                }
+                .s-in{
+                    margin-top: 20px;
+                }
+                .s-sms{
+                    margin-top: 20px;
+                }
+                input{
+                 border: 1px solid black;
+                 border-radius: 5px;
+                 height: 30px;
+                    
+                }
+                
+                textarea{
+                    width: 400px;
+                    height: 150px;
+                    border: 1px solid black;
+                    border-radius: 5px;
+                }
+
             }
             .goods-storage {
                 .message-info {
@@ -775,8 +881,9 @@ ul {
 .footer {
     background-color: $side-color;
     .foo {
+        padding: 50px;
         display: grid;
-        grid-template-columns: repeat(auto-fill, 200px);
+        grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
         grid-column-gap: 20px;
         padding: 20px;
         grid-column-gap: 5px;
@@ -805,15 +912,16 @@ ul {
                     padding: 5px 4px;
                     border-radius: 25px;
                     display: inline-block;
-                    width: 100%;
+                    width: 170px;
                     margin-bottom: 15px;
                     padding-bottom: 6px;
                     color: $hover;
-                    font-size: 14px;
+                    font-size: 12px;
                     img {
+                        margin-left: 2px;
                         width: 30px;
-                        padding: 0 7px;
-                        height: 18px;
+                        padding: 0 2px;
+                        height: 13px;
                     }
                     span {
                         border-left: 1px solid rgba(0, 0, 0, .05);
@@ -824,6 +932,7 @@ ul {
         }
     }
 }
+
 @media only screen and (max-width: 650px) {
     .workspace .main .sidebar .toolbar .profile .title div {
        // font-size:12px;
