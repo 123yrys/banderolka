@@ -11,6 +11,42 @@
            
             <div class="content">
                 <h1>Лента отзывов</h1>
+                  <div class="sup2">
+
+            <div class="s-in">
+                    <span>Никнейм</span>
+                    <form>
+                      <input type="" size="50">
+                    </form>
+             </div>
+
+
+             <div class="s-sms">
+                    <span>Сообщение</span>
+                    <form>
+                      <textarea> </textarea>
+                    </form>
+             </div>
+
+             <p>Прикрепленные файлы</p>
+             
+             
+              
+              <div class="file_upload">
+              <button type="button">Выбрать</button>
+              <div>Файл не выбран</div>
+              <input type="file">
+              </div>
+
+              <div class="butt">
+              <button>Отправить</button>
+              <button>Отмена</button>
+              </div>
+            
+
+            </div>
+           
+            </div>
             </div>
         </div>
         </section

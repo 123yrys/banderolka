@@ -492,25 +492,26 @@ ul {
                 }
                 .new-order{
                     margin-top: 30px;
-                    display: grid;
-                    grid-template-columns: 300px 255px 200px 200px ;
-                    grid-gap: 10px;
+                    display: flex;
+                    justify-content: space-between;
+                    flex-wrap: wrap-reverse;
                 }
                 .new-order2{
                     margin-top: 20px;
-                    display: grid;
-                    grid-template-columns: 200px 200px 200px 200px;
+                    display: flex;
+                    justify-content: space-between;
+                    flex-wrap: wrap-reverse;
                 }
-                .btnn{
-                    display: grid;
-                    grid-template-columns: 200px 200px;
-                    margin-top: 10px;
-                    height: 20px;
+                button{
                     float: right;
-                    color: white;
+                    margin-top: 10px;
+                    color: black;
                     background: #B5EDFF;
-                    border: none;
-                    
+                    border: 0.5px solid black;
+                    width: 100px;
+                    height: 25px;
+                    border-radius: 5px;
+                    text-align: center;   
                 }
             }
             .help-line {
@@ -590,6 +591,7 @@ ul {
                     border-radius: 10px;
                 }
             }
+
             
             .calc {
                 margin-top: 20px;
@@ -597,16 +599,14 @@ ul {
                 font-size: 15px;
                 display: grid;
                 grid-gap: 20px;
-                .btn{
-                    
-                }
                 .calc-box{
-                    display: grid;
-                    grid-template-columns: 200px 200px;
+                    display: flex;
+                    justify-content: space-around;
                 }
                 .calc-box2{
-                    display: grid;
-                    grid-template-columns: 200px 200px 200px 200px;
+                    display: flex;
+                    justify-content: space-around;
+
                 }
                 input {
                     border-radius: 5px;
@@ -933,6 +933,16 @@ ul {
     }
 }
 
+@media screen and (max-width: 678px){
+    .calc-box{
+        flex-direction: column;
+    }
+}
+@media screen and (max-width: 678px){
+    .calc-box2{
+        flex-direction: column;
+    }
+}
 @media only screen and (max-width: 650px) {
     .workspace .main .sidebar .toolbar .profile .title div {
        // font-size:12px;

@@ -131,7 +131,8 @@
                     <i class="fas fa-angle-right"></i>
                 </div>
             </a>
-           <a id="menu" href="#" class="icon">&#9776;</a> 
+            <a id="menu" href="#" class="icon">&#9776;</a> 
+           
         </div>
     </div>
     
@@ -145,5 +146,7 @@ menu.onclick = function myFunction(){
         x.className = "toolbar";
     }
 }
+
 </script>
+
    
