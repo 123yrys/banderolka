@@ -6,7 +6,7 @@
                 Copyright 2010 - 2018 Qwintry.<br>
                 All Rights Reserved
             </p>
-            <div class="apps">
+            
                 <a href="#" class="install">
                     <img src="assets/images/apple.svg" alt="">
                     <span>Скачать в App Store</span>
@@ -15,7 +15,7 @@
                     <img src="assets/images/google-play.svg" alt="">
                     <span>Скачать в Google Play</span>
                 </a>
-            </div>
+            
         </div>
 
         <div class="f-info">
@@ -27,7 +27,7 @@
                 <a href="#">Услуги</a><br>
         </div>
 
-        <div class="f-vidoe">
+        <div class="f-video">
             <h1>Видео</h1>
                 <a href="#">Как это работает</a><br>
                 <a href="#">Видео: как мы покуем посылки</a><br>

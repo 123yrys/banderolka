@@ -25,7 +25,7 @@
              <div class="new-i">
                     <span>Ссылка на товар</span>
                     <form>
-                      <input type="" placeholder=" https://www.amazon.com/international" size="35">
+                      <input type="" placeholder=" https://www.amazon.com/international" size="30">
                     </form>
              </div>
 
@@ -79,13 +79,13 @@
              <div class="new-i8">
                     <span>Примечание</span>
                     <form>
-                      <input size="47">
+                      <input size="45">
                     </form>
              </div>
 
             </div>
 
-            <div class="">
+            <div class="btnn">
             <button class="btnn1">Добавить</button>
             <button class="btnn2">Очистить</button>
             </div>

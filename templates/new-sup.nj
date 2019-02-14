@@ -17,7 +17,7 @@
             <div class="s-in">
                     <span>Тема</span>
                     <form>
-                      <input type="" size="53">
+                      <input type="">
                     </form>
              </div>
 
