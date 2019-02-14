@@ -2,7 +2,6 @@
 {% block content %}
 <!DOCTYPE html>
 <html>
-    {% include "head.nj" %}
 <body>
     <div class="workspace">
      
@@ -22,7 +21,7 @@
             </div>
             
         </div>
-        </section
+        </section>
     </div>
  
 </body>

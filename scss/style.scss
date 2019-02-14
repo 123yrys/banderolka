@@ -137,7 +137,6 @@ ul {
                 height: 100px;
             }
         }
-        
         .content {
             padding: 0 20px;
             display: flex;
@@ -167,7 +166,7 @@ ul {
                 justify-content: flex-end;
                 height: 100%;
                 color: #6a727c;
-                padding: 10px;
+                padding: 15px;
                 background: #fff;
                 border-radius: 4px;
                 .avatar {
@@ -195,7 +194,7 @@ ul {
                 border-top: 1px solid #eee;
                 background: #fff;
                 position: absolute;
-                padding: 0px 0px 15px 12px;
+                padding: 0px 11px 15px 11px;
                 display: none;
                 .navigations {
                     display: flex;
@@ -206,6 +205,85 @@ ul {
                     }
                 }
             }
+        }
+    }
+    .menu-mobile{
+        width: 100%;
+        background: $header-color;
+        position: absolute;
+        top:0px;
+        display: none;
+        z-index: 999;
+        .toolbar-mobile{
+            .svg-menu{
+                fill: white;
+                width: 24px;
+                height: 100px;
+                margin-left: 20px;
+            }
+            .icon{
+                display: none;
+            }
+            a:hover {
+                background: $header-color;
+            }
+            .profile {
+                display: flex;
+                .image {
+                    width: 15%;
+                    height: 60px;
+                    display: flex;
+                    padding: 0px 0px 0px 15px;
+                    img {
+                        width: 30px;
+                    }
+                }
+                .title {
+                    display: flex;
+                    flex-direction: column;
+                    justify-content: center;
+                    color: #34ccff;
+                    width: 50%;
+                    div {
+                        font-weight: 500;
+                        font-size: 16px;
+                        margin-bottom: 5px;
+                    }
+                    span {
+                        color: #c3cbd6;
+                        font-size: 12px;
+                    }
+                }
+                .arrow-icon {
+                    padding: 18px 0px 0px 40px;
+                    font-size: 20px;
+                }
+            }
+            .active-profile {
+                border-right: 3px solid #34ccff;
+            }
+        }
+    }
+    .sidebar-mobile{
+        width: 23%;
+        background: $header-color;
+        display: none;
+        .svg-menu{
+            fill: white;
+            width: 24px;
+            height: 100px;
+            margin-left: 20px;
+        }
+    }
+    .content-mobile{
+        padding: 0 20px;
+        display: flex;
+        justify-content: center;
+        background: $header-color;
+        width: 77%;
+        display:none;
+        img{
+            height:100px;
         }
     }
     .main {
@@ -295,31 +373,7 @@ ul {
                     font-size: 12px;
                     color: #aab7c3;
                 }
-                .apps {
-                    margin-right: 15px;
-                    margin-top: 15px;
-                    margin-bottom: 120px;
-                    .install {
-                        background-color: #f9fafc;
-                        padding: 5px 4px;
-                        border-radius: 25px;
-                        display: inline-block;
-                        width: 100%;
-                        margin-bottom: 15px;
-                        padding-bottom: 6px;
-                        color: $hover;
-                        font-size: 14px;
-                        img {
-                            width: 30px;
-                            padding: 0 7px;
-                            height: 18px;
-                        }
-                        span {
-                            border-left: 1px solid rgba(0, 0, 0, .05);
-                            padding: 0 10px;
-                        }
-                    }
-                }
+             
             }
         }
         .content {
@@ -912,7 +966,7 @@ ul {
                     padding: 5px 4px;
                     border-radius: 25px;
                     display: inline-block;
-                    width: 170px;
+                    width: 85%;
                     margin-bottom: 15px;
                     padding-bottom: 6px;
                     color: $hover;
@@ -941,13 +995,8 @@ ul {
       .workspace .main .sidebar .toolbar .profile .title span{
        // font-size: 8px;
     }
-    .workspace .main .sidebar{
-        display: none;
-    }
-    .workspace .main .content{
-        width: 89%;
-    }
   }
+ 
 @media only screen and (max-width: 768px) {
     .workspace .main .content .box {
         flex-direction: column;
@@ -959,12 +1008,6 @@ ul {
           margin-left: 0;
           margin-top: 5%;
           width: 100%;
-      }
-      .workspace header .content .content-header{
-        display: none;
-      }
-      .workspace header .content .drop-dwn{
-          display: none;
       }
       .workspace .main .sidebar .toolbar .profile{
         display: flex;
@@ -984,16 +1027,27 @@ ul {
     .workspace .main .sidebar .toolbar .profile{
         margin-top: 5%;
     }
-   
+    .workspace header .content, .workspace header .sidebar{
+        display: none;
+    }
+    .workspace .sidebar-mobile, .workspace .content-mobile{
+        display:block;
+    }
     .workspace .main .content .box {
         flex-direction: column;
       }
       .workspace .main .content .box .case{
-          width: 94%; 
+          width: 95%; 
       }
       .workspace .main .content .box .adress-box {
           margin-left: 0;
           margin-top: 5%;
           width: 100%;
       }
+      .workspace .main .sidebar{
+        display: none;
+    }
+    .workspace .main .content{
+        width: 100%;
+    }
   }

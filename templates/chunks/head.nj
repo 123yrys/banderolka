@@ -9,6 +9,9 @@
         $(".drop-dwn").click(function(){
             $(".drop-content").toggle();
         });
+        $('.svg-menu').click(function(){
+            $('.menu-mobile').toggle();
+            })
         });
     </script>
 </head>
